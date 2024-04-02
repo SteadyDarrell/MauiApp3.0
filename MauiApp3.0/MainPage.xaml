@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout x:Name="MessageContainer" Padding="10">
+                <!-- Message bubbles will be added here dynamically -->
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout Orientation="Horizontal" Margin="0,8,0,0">
+            <Entry x:Name="MessageEntry" Placeholder="Type a message" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Send" Clicked="SendMessage_Clicked" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
